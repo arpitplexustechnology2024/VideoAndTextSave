@@ -1,24 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dB5-0W-p64">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoAndTextSave" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="BoyImage" translatesAutoresizingMaskIntoConstraints="NO" id="fVL-Mm-KcO">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" role="primary" translatesAutoresizingMaskIntoConstraints="NO" id="zoh-fH-6in">
+                                <rect key="frame" x="0.0" y="783" width="393" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save"/>
+                                <connections>
+                                    <action selector="saveImageButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xa7-DC-Vvq"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arpit Dhameliya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-QC-nur">
+                                <rect key="frame" x="20" y="79" width="186" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zoh-fH-6in" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5Ih-Tc-5eg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zoh-fH-6in" secondAttribute="trailing" id="ExR-QD-dGD"/>
+                            <constraint firstItem="zoh-fH-6in" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FBI-yz-kUI"/>
+                            <constraint firstItem="zoh-fH-6in" firstAttribute="top" secondItem="fVL-Mm-KcO" secondAttribute="bottom" id="YwG-vN-rsH"/>
+                            <constraint firstItem="fVL-Mm-KcO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ffF-gF-zax"/>
+                            <constraint firstItem="p6P-QC-nur" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mEw-uN-9rX"/>
+                            <constraint firstItem="fVL-Mm-KcO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="r1u-6B-VyY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fVL-Mm-KcO" secondAttribute="trailing" id="xip-7C-BYK"/>
+                            <constraint firstItem="p6P-QC-nur" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zbC-VC-REV"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="gear" catalog="system" id="qnX-6L-0A8"/>
+                    <connections>
+                        <outlet property="imageView" destination="fVL-Mm-KcO" id="ogs-pQ-JZd"/>
+                        <outlet property="textLabel" destination="p6P-QC-nur" id="tJJ-wr-tXn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="g9R-oE-jwp">
+            <objects>
+                <viewController storyboardIdentifier="VideoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="koC-an-kXp" customClass="VideoViewController" customModule="VideoAndTextSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Fs-rl-vAe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="32t-m2-ejJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="square.and.pencil" catalog="system" id="nme-4A-U7E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0C-gy-6gW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="797.70992366412213" y="-27.464788732394368"/>
+        </scene>
+        <!--Slow Motion View Controller-->
+        <scene sceneID="zq7-4Q-BLG">
+            <objects>
+                <viewController storyboardIdentifier="SlowMotionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bvg-ld-jpC" customClass="SlowMotionViewController" customModule="VideoAndTextSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xjb-ns-JV4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lxo-mG-C04"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="gift" catalog="system" id="Rvf-zo-HGm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7d-UW-R1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1498" y="-27"/>
+        </scene>
+        <!--Fast Motion View Controller-->
+        <scene sceneID="H1o-f6-5Ql">
+            <objects>
+                <viewController storyboardIdentifier="FastMotionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dB5-0W-p64" customClass="FastMotionViewController" customModule="VideoAndTextSave" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwi-Ps-eWf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="vjL-l7-FIe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VSe-UC-af1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="-27"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BoyImage" width="2001" height="3001"/>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="gift" catalog="system" width="128" height="125"/>
+        <image name="square.and.pencil" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

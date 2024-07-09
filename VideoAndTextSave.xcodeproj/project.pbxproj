@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD25D2022C3D9CCC00C46ECA /* SlowMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25D2012C3D9CCC00C46ECA /* SlowMotionViewController.swift */; };
+		BD25D2102C3DC1D200C46ECA /* FastMotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD25D20F2C3DC1D200C46ECA /* FastMotionViewController.swift */; };
 		BD31E4742C3C4DE10001DB02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E4732C3C4DE10001DB02 /* AppDelegate.swift */; };
 		BD31E4762C3C4DE10001DB02 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E4752C3C4DE10001DB02 /* SceneDelegate.swift */; };
 		BD31E4782C3C4DE10001DB02 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E4772C3C4DE10001DB02 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 		BD31E48B2C3C4DE20001DB02 /* VideoAndTextSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E48A2C3C4DE20001DB02 /* VideoAndTextSaveTests.swift */; };
 		BD31E4952C3C4DE20001DB02 /* VideoAndTextSaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E4942C3C4DE20001DB02 /* VideoAndTextSaveUITests.swift */; };
 		BD31E4972C3C4DE20001DB02 /* VideoAndTextSaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD31E4962C3C4DE20001DB02 /* VideoAndTextSaveUITestsLaunchTests.swift */; };
+		BD94DBCA2C3C6573003E89D0 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94DBC92C3C6573003E89D0 /* VideoViewController.swift */; };
+		BD94DBCC2C3C65D7003E89D0 /* SodaRecipe.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD94DBCB2C3C65D7003E89D0 /* SodaRecipe.mp4 */; };
+		BDB90BED2C3CAB74005C000B /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BDB90BEC2C3CAB74005C000B /* video3.mp4 */; };
+		BDB90BEF2C3CAC24005C000B /* 1234.mov in Resources */ = {isa = PBXBuildFile; fileRef = BDB90BEE2C3CAC23005C000B /* 1234.mov */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD25D2012C3D9CCC00C46ECA /* SlowMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlowMotionViewController.swift; sourceTree = "<group>"; };
+		BD25D20F2C3DC1D200C46ECA /* FastMotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FastMotionViewController.swift; sourceTree = "<group>"; };
 		BD31E4702C3C4DE10001DB02 /* VideoAndTextSave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoAndTextSave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31E4732C3C4DE10001DB02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD31E4752C3C4DE10001DB02 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		BD31E4902C3C4DE20001DB02 /* VideoAndTextSaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoAndTextSaveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD31E4942C3C4DE20001DB02 /* VideoAndTextSaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAndTextSaveUITests.swift; sourceTree = "<group>"; };
 		BD31E4962C3C4DE20001DB02 /* VideoAndTextSaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoAndTextSaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD94DBC92C3C6573003E89D0 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		BD94DBCB2C3C65D7003E89D0 /* SodaRecipe.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SodaRecipe.mp4; sourceTree = "<group>"; };
+		BDB90BEC2C3CAB74005C000B /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
+		BDB90BEE2C3CAC23005C000B /* 1234.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1234.mov; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +111,16 @@
 		BD31E4722C3C4DE10001DB02 /* VideoAndTextSave */ = {
 			isa = PBXGroup;
 			children = (
+				BD94DBCB2C3C65D7003E89D0 /* SodaRecipe.mp4 */,
+				BDB90BEC2C3CAB74005C000B /* video3.mp4 */,
+				BDB90BEE2C3CAC23005C000B /* 1234.mov */,
 				BD31E4732C3C4DE10001DB02 /* AppDelegate.swift */,
 				BD31E4752C3C4DE10001DB02 /* SceneDelegate.swift */,
+				BD25D20F2C3DC1D200C46ECA /* FastMotionViewController.swift */,
 				BD31E4772C3C4DE10001DB02 /* ViewController.swift */,
 				BD31E4792C3C4DE10001DB02 /* Main.storyboard */,
+				BD25D2012C3D9CCC00C46ECA /* SlowMotionViewController.swift */,
+				BD94DBC92C3C6573003E89D0 /* VideoViewController.swift */,
 				BD31E47C2C3C4DE20001DB02 /* Assets.xcassets */,
 				BD31E47E2C3C4DE20001DB02 /* LaunchScreen.storyboard */,
 				BD31E4812C3C4DE20001DB02 /* Info.plist */,
@@ -232,7 +250,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD31E47D2C3C4DE20001DB02 /* Assets.xcassets in Resources */,
+				BD94DBCC2C3C65D7003E89D0 /* SodaRecipe.mp4 in Resources */,
 				BD31E4802C3C4DE20001DB02 /* Base in Resources */,
+				BDB90BED2C3CAB74005C000B /* video3.mp4 in Resources */,
+				BDB90BEF2C3CAC24005C000B /* 1234.mov in Resources */,
 				BD31E47B2C3C4DE10001DB02 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +281,10 @@
 			files = (
 				BD31E4782C3C4DE10001DB02 /* ViewController.swift in Sources */,
 				BD31E4742C3C4DE10001DB02 /* AppDelegate.swift in Sources */,
+				BD94DBCA2C3C6573003E89D0 /* VideoViewController.swift in Sources */,
+				BD25D2102C3DC1D200C46ECA /* FastMotionViewController.swift in Sources */,
 				BD31E4762C3C4DE10001DB02 /* SceneDelegate.swift in Sources */,
+				BD25D2022C3D9CCC00C46ECA /* SlowMotionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
